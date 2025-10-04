@@ -1,0 +1,667 @@
+body {
+    background-color: #e0e5ec;
+    font-family: 'Playpen Sans Arabic', sans-serif;
+
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    direction: rtl;
+    font-family: "Story Script", 'Playpen Sans Arabic', sans-serif;
+    font-weight: normal;
+    position: relative;
+    backdrop-filter: saturate(150%) blur(6px);
+    min-height: 60px;
+}
+
+.nav-left {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    width: 70%;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* أزرار القائمة بإطار كامل من كل الجهات */
+#nav-left li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    background-color: transparent;
+    margin: 10px;
+    border: 1px solid rgba(61, 68, 104, 0.25);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#nav-left li a:hover {
+    background-color: #fff;
+    color: rgba(61, 68, 104, 0.8);
+
+}
+
+#nav-right,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    right: 16px;
+}
+
+.logInStyle a {
+    background-color: #333 !important;
+    color: #fff !important;
+    margin-right: 10% !important;
+}
+
+/* شعار نصي */
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #000000;
+    margin-right: 20px;
+}
+
+.logo:hover {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* تأكيد عدم وجود خلفية حول رابط الشعار */
+.nav-right a {
+    background: transparent !important;
+}
+
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5vw;
+    white-space: nowrap;
+    font-weight: bold;
+
+}
+
+ul li a:hover {
+    text-decoration: none;
+    color: #6c7293;
+    font-size: 1.5vw;
+    white-space: nowrap;
+    cursor: pointer;
+
+}
+.images {
+    /*icons*/
+    width: 3vw;
+    padding: 2px;
+}
+/* زر الهامبرغر */
+.menu-toggle {
+    display: none;
+    /* يظهر فقط على الشاشات الصغيرة */
+    font-size: 28px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+
+/*end nav bar style*/
+/* div search*/
+.style1 {
+    color: #000;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    /* خلفية فيديو ممتدة */
+    min-height: 90vh;
+    position: relative;
+    overflow: hidden;
+
+}
+
+h1 {
+    font-size: 2vw;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    direction: rtl;
+}
+
+h2 {
+    font-size: 1.2vw;
+    color: #6c7293;
+    margin-bottom: 30px;
+    text-align: center;
+    direction: rtl;
+}
+
+.inputSearch {
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    padding: 12px 14px;
+    box-shadow: 0 4px 15px rgba(238, 237, 237, 0.15);
+}
+
+.inputSearch i {
+    font-size: 20px;
+    color: #6c7293;
+    margin-right: 10px;
+    margin-left: 20px;
+
+}
+
+.inputSearch .input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: transparent;
+    color: #333;
+}
+
+.inputSearch button {
+    background: #333;
+    border: none;
+    color: #fff;
+    font-size: 0.95rem;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.6s;
+}
+
+
+/* فيديو الخلفية */
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(0.4);
+}
+
+/* محتوى المقطع فوق الفيديو */
+.style1-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 70vh;
+
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 18px;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(1px);
+}
+
+.hero-img {
+    width: 50px;
+    height: 50px;
+
+    object-fit: contain;
+    /* أيقونة بيضاء بدون ظل أو شفافية */
+    filter: brightness(0) invert(1);
+    opacity: 1;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-title {
+    margin: 0;
+    color: #fff;
+    font-size: 2.2rem;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+.hero-subtitle {
+    margin: 2px 0 0 0;
+    color: #e9eef6;
+    font-size: 0.95rem;
+}
+
+.hero-welcome {
+    margin: 14px 0 0 0;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.inner {
+    font-size: 2vw;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    direction: rtl;
+
+}
+
+.innerh2 {
+    font-size: 1.2vw;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+    direction: rtl;
+}
+
+/*style2 */
+.style2 {
+    margin-top: 10%;
+}
+
+.box a,.box {
+    text-decoration: none;
+    text-align: center;
+    width: 25%;
+    height: auto;
+    border-radius: 20px;
+    transition: 0.6s;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: 3px dotted #000000;
+}
+
+.box:hover {
+    transition: 0.2s;
+    box-shadow: 0 8px 25px #6c7293;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    grid-auto-flow: column;
+    gap: 2%;
+    text-align: center;
+    align-items: center;
+
+}
+
+.container>div {
+    margin-top: 40px;
+}
+
+#homeIcon,
+#vellaIcon,
+#landIcon,
+#shopIcon {
+    border-radius: 10px;
+    padding: 10px;
+
+
+}
+
+#homeIcon:hover,
+#vellaIcon:hover,
+#landIcon:hover,
+#shopIcon:hover {
+    font-size: 38px;
+    box-shadow: 0 8px 25px #6c7293;
+
+}
+
+/*style3*/
+.style3 {
+    text-align: center;
+    margin-top: 10%;
+
+}
+
+.style3 h1 {
+    font-size: 38px;
+    color: #000000;
+}
+
+.style3 h2 {
+    font-size: 24px;
+    color: #6c7293;
+    margin-bottom: 30px;
+}
+
+/* الصندوق */
+
+.offers-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.offerbox:hover {
+    transition: 0.2s;
+    box-shadow: 0 8px 25px #6c7293;
+}
+
+.offerbox {
+    width: 25%;
+    height: auto;
+    margin-bottom: 2%;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.offerbox img {
+    width: 100%;
+    height: 80%;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    top: 10px;
+}
+
+.offerbox .tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #d63384;
+    color: white;
+    padding: 1% 2%;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+.offerbox .content {
+    padding: 20px;
+    text-align: right;
+    direction: rtl;
+}
+
+.offerbox .content h1 {
+    font-size: 1.2vw;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #6c7293;
+    font-size: 0.8vw;
+    margin-bottom: 15px;
+}
+
+.details {
+    display: flex;
+    gap: 15px;
+    color: #000000;
+    font-size: 0.8vw;
+    margin-bottom: 15px;
+    direction: ltr;
+}
+
+.details i {
+    color: #6c7293;
+    margin-left: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer button {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer button:hover {
+    background: #3d4468;
+    color: #fff;
+}
+
+.footer .price {
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: #d63384;
+}
+
+
+/*   Footer  */
+.site-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    margin-top: 6%;
+    padding: 40px 20px 60px;
+    background: #f7f8fb;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    direction: rtl;
+}
+
+.footer-col h4 {
+    color: #000000;
+    margin: 0 0 12px;
+    font-size: 20px;
+}
+
+.footer-col p {
+    color: #6c7293;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: #6c7293;
+    text-decoration: none;
+
+
+}
+
+.footer-links a:hover {
+    color: #3d4468;
+}
+
+.social-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 14px;
+}
+
+.social-list a {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    color: #000000;
+    transition: transform .2s ease, box-shadow .2s ease, color .2s ease;
+}
+
+.social-list a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    color: #6c7293;
+}
+
+/* Responsive */
+@media screen and (max-width: 1555px) {
+
+    ul li a,
+    i,
+    h1,
+    h2 {
+        font-size: 4vw;
+    }
+
+     nav {
+        position: relative;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .nav-left,
+    .nav-right {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .box,
+    .offerbox {
+        width: 90%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        margin: 0 auto;
+    }
+
+    .location {
+        font-size: 2.5vw;
+    }
+
+    .inputSearch {
+        flex-direction: column;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .inputSearch i {
+        margin: 10px 0;
+    }
+
+    .inputSearch .input {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 4vw;
+
+    }
+
+    .inputSearch button {
+        width: 100%;
+        margin: 0;
+        font-size: 4vw;
+
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .offers-container {
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .offerbox .content h1 {
+        font-size: 4vw;
+    }
+
+    .footer .price {
+        font-size: 4vw;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .social-list {
+        justify-content: center;
+    }
+
+}
