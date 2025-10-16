@@ -1,0 +1,122 @@
+style1 {
+  color: #000;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  margin-top: 15px; /* خلفية فيديو ممتدة */
+  min-height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+.inputSearch {
+  display: flex;
+  flex-direction: row;
+  direction: rtl;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  margin-bottom: 400px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 12px 14px;
+  box-shadow: 0 4px 15px rgba(238, 237, 237, 0.15);
+}
+.inputSearch i {
+  /*search icon*/
+  font-size: 20px;
+  color: #4e7695;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+.inputSearch .input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: transparent;
+  color: #4e7695;
+}
+.inputSearch button {
+  background: #4e7695;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: 0.6s;
+  width: 60px;
+} /* صوره الخلفية */
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  z-index: 0;
+  filter: brightness(0.9);
+} /* محتوى المقطع فوق خلفيه الموقع */
+.style1-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 70vh;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 18px;
+}
+.hero-text {
+  text-align: center;
+}
+.hero-title {
+  /*مرحبا بك في عقار*/
+  margin-top: 20px;
+  color: #4e7695;
+  font-size: 2.2rem;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+.hero-subtitle {
+  /* خطوتك الاولى ...*/
+  margin: 2px 0 0 0;
+  color: #4e7695;
+  font-size: 0.95rem;
+} /*هدول لشو نسيت؟*/
+.inner {
+  font-size: 2vw;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  direction: rtl;
+}
+.innerh2 {
+  font-size: 1.2vw;
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+  direction: rtl;
+}
+@media screen and (max-width: 1720px) {
+  .inputSearch {
+    width: 80%;
+  }
+  .inputSearch button {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,132 @@
+body {
+  background-color: #e5e5e5;
+  font-family: "Playpen Sans Arabic", sans-serif;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  direction: rtl;
+  font-family: "Story Script", "Playpen Sans Arabic", sans-serif;
+  font-weight: normal;
+  position: relative;
+  backdrop-filter: saturate(150%) blur(6px);
+  min-height: 60px;
+}
+.nav-left {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 70%;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} /* أزرار القائمة بإطار كامل من كل الجهات */
+#nav-left li a {
+  display: block;
+  color: #4e7695;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: transparent;
+  margin: 10px;
+  border: 1px solid rgba(61, 68, 104, 0.25);
+  border-radius: 10px;
+  text-align: center;
+  width: 80px;
+}
+#nav-left li a:hover {
+  background-color: #4e7695;
+  color: #fff;
+}
+#nav-right,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  right: 16px;
+}
+.logInStyle a {
+  background-color: #4e7695 !important;
+  color: #fff !important;
+  margin-right: 10% !important;
+  text-align: center;
+} /* شعار نصي */
+.logo span {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #4e7695;
+  padding-right: 50px;
+}
+.logo:hover {
+  text-shadow: 0 0 8px #4e7695;
+} /* تأكيد عدم وجود خلفية حول رابط الشعار */
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li a {
+  text-decoration: none;
+  color: #4e7695;
+  font-size: 1.5vw;
+  white-space: nowrap;
+  font-weight: bold;
+}
+ul li a:hover {
+  text-decoration: none;
+  color: #6c7293;
+  font-size: 1.5vw;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.images {
+  /*icons*/
+  width: 3vw;
+  padding: 2px;
+} /* زر الهامبرغر */
+.menu-toggle {
+  display: none; /* يظهر فقط على الشاشات الصغيرة */
+  font-size: 28px;
+  cursor: pointer;
+  border-radius: 10px;
+  padding-right: 7%;
+  color: #4e7695;
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-left {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* ممكن تتحكم فيها بالهامبرغر */
+    margin-top: 10px;
+  }
+  .nav-left.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+    order: 0;
+    margin: 0;
+  }
+  .logo {
+    display: none;
+  }
+}

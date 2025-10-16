@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+h5 {
+  font-size: 1.5rem;
+  color: #4e7695;
+  text-align: center;
+  direction: rtl;
+}
+.offers-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5%;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+.style2 {
+  margin-top: 7%;
+}
+
+@media screen and (max-width: 1720px) {
+  .box,
+  .offerbox {
+    width: 80%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin: 20px auto;
+  }
+  .location {
+    font-size: 2.5vw;
+  }
+
+  .inputSearch {
+    flex-direction: row;
+    width: 80%;
+    padding: 1px;
+    margin-bottom: 750px;
+  }
+
+  .inputSearch i {
+    width: 5%;
+    /*  margin: 10px 5px;*/
+  }
+
+  .inputSearch .input {
+    width: 60%;
+    /* margin: 10px;*/
+    font-size: 3vw;
+  }
+
+  .inputSearch button {
+    width: 40px;
+    height: 30px;
+    /*  margin: 0;*/
+    font-size: 16px;
+    text-align: center;
+    padding: 1px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .offers-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .offerbox .content h1 {
+    font-size: 12px !important;
+  }
+
+  .footer .price {
+    font-size: 4vw;
+  }
+  .bg-image {
+    object-fit: cover;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

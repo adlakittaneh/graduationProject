@@ -1,0 +1,59 @@
+.headerPage {
+  width: 90%;
+  height: 120px;
+  background-color: transparent;
+  margin: auto;
+  direction: rtl;
+  border: 1px solid #4e7695;
+}
+section {
+  background-color: transparent;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 800px;
+  color: #4e7695;
+  direction: rtl;
+}
+.filter {
+  padding-right: 20px;
+  padding-top: 25px;
+  background-color: transparent;
+  margin: auto;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+.filter select {
+  background-color: transparent;
+  padding-right: 15px;
+  border-radius: 20px;
+  border: 1px solid #4e7695;
+  font-size: 16px;
+  height: 60px;
+  font-family: "Playpen Sans Arabic", sans-serif;
+  color: black;
+  width: 100%;
+}
+.filter select:hover {
+  box-shadow: 0 6px 13px #b02a5b;
+}
+.filter select option {
+  background-color: transparent;
+}
+.filter button {
+  background-color: #4e7695;
+  border-radius: 20px;
+  width: 80%;
+  height: 50px;
+  font-size: 16px;
+  color: white;
+  font-family: "Playpen Sans Arabic", sans-serif;
+}
+.filter button:hover {
+  box-shadow: 0 6px 13px #b02a5b;
+}
+.searchbtn {
+  margin-right: 30%;
+}
